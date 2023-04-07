@@ -9,5 +9,15 @@ args = parser.parse_args()
 
 topic = args.topic
 
-print(topic)
+if not topic:
+    print("Please mention topic name")
+    raise SystemExit(1)
+    
+# print("Topic name-> ",args.topic)
+print("Creating the topic : ", args.topic)
 
+cmd = "./kafka-topics.sh --create --topic {} --bootstrap-server localhost:9092".format(topic)
+
+os.chdir('/usr/local/kafka/bin')
+os.system(cmd)
+# print("Topic {} created successfully!".format(topic))
