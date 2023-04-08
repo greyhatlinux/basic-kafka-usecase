@@ -1,7 +1,7 @@
 # Basic Kafka Usecase
 
 This repository showcases the basic usecase of kafka in a bare minimum setup. 
-Feel free to use the module, experiment with it features and suggest changes.
+
 
 ## Prerequite : 
 Please install and configure the config files for Apache Kafka and Zookeeper in your Ubuntu system before going ahead with this setup.
@@ -18,7 +18,9 @@ The repository has 4 branches :
 
 
 # Running the setup 
-Do ensure that before running the producer, consumers from this repository, your kafka.service and zookeerper.service should be in running state. 
+Do ensure that before running the producer, consumers from this repository, the two services namely 'kafka.service' and 'zookeerper.service' should be in running state. 
+
+![Servies](./pics/services.png)
 
 For the purpose of feature addition, please switch to specific branch before adding your code changes.
 
@@ -26,5 +28,6 @@ For the purpose of feature addition, please switch to specific branch before add
 1. Adding a script 'setup.py' for automatic kafka and zookeeper installation.
 2. replace the module 'os' with 'subprocess' within the scripts.
 
+> Feel free to use the module, experiment with it features and suggest changes.
 
 Thanks!
