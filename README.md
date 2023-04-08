@@ -22,4 +22,9 @@ Do ensure that before running the producer, consumers from this repository, your
 
 For the purpose of feature addition, please switch to specific branch before adding your code changes.
 
+# Expected feature additions
+1. Adding a script 'setup.py' for automatic kafka and zookeeper installation.
+2. replace the module 'os' with 'subprocess' within the scripts.
+
+
 Thanks!
