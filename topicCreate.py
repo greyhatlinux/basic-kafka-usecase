@@ -10,7 +10,8 @@ args = parser.parse_args()
 topic = args.topic
 
 if not topic:
-    print("Please mention topic name")
+    print("Please mention topic name  : --topic topicName")
+    print("Exiting!")
     raise SystemExit(1)
     
 # print("Topic name-> ",args.topic)

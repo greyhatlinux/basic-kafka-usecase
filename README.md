@@ -20,7 +20,7 @@ The repository has 4 branches :
 # Running the setup 
 Do ensure that before running the producer, consumers from this repository, the two services namely 'kafka.service' and 'zookeerper.service' should be in running state. 
 
-![Servies](./pics/services.png)
+![Servies](./img/services.png)
 
 For the purpose of feature addition, please switch to specific branch before adding your code changes.
 
