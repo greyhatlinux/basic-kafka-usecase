@@ -23,11 +23,13 @@ if topics:
 # print(all_topics)
 
 if not topic and not topics:
-    print("Please mention topic(s) name")
+    print("Please mention atleast one topic to consume from : --topic topicName")
+    print("Exiting!")
     raise SystemExit(1)
 
 if not name:
-    print("Please mention consumer name")
+    print("Please mention consumer name : --name consumerName")
+    print("Exiting!")
     raise SystemExit(1)
     
 # print("Topic name-> ",args.topic)
