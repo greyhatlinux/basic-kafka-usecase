@@ -27,7 +27,8 @@ For the purpose of feature addition, please switch to specific branch before add
 # Expected feature additions
 1. Adding a script 'setup.py' for automatic kafka and zookeeper installation.
 2. replace the module 'os' with 'subprocess' within the scripts.
+3. Add a switch to topicCreate.py to enable it to create multiple topics at once.
 
-> Feel free to use the module, experiment with it features and suggest changes.
+> Feel free to use the module, experiment with its features and suggest changes.
 
 Thanks!
