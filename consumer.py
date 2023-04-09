@@ -16,8 +16,8 @@ topics = args.topics
 n_topics = 0
 all_topics = ""
 if topics:
-    n = len(topics)
-    for i in range(n):
+    n_topics = len(topics)
+    for i in range(n_topics):
         all_topics += topics[i] + "|"
 
 # print(all_topics)
@@ -33,11 +33,12 @@ if not name:
 # print("Topic name-> ",args.topic)
 print("Creating consumer to the topic(s) : ", args.topic)
 
-if n == 0:
+if n_topics == 0:
     cmd = "./kafka-console-consumer.sh --topic {} --bootstrap-server localhost:9092".format(topic)
 else:
     cmd = "./kafka-console-consumer.sh --include '{}' --bootstrap-server localhost:9092".format(all_topics)
 
 os.chdir('/usr/local/kafka/bin')
+os.system('clear')
 print("Consumer '{}' is receiving messages :".format(name))
 os.system(cmd)
