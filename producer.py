@@ -21,5 +21,6 @@ print("Creating producer to the topic : ", args.topic)
 cmd = "./kafka-console-producer.sh --topic {} --bootstrap-server localhost:9092".format(topic)
 
 os.chdir('/usr/local/kafka/bin')
-print("Start sending messages :")
+os.system('clear')
+print("Start sending messages to topic '{}':".format(topic))
 os.system(cmd)
